@@ -19,13 +19,13 @@ end
 def find_the_cheese(queso)
   # the array below is here to help
   # cheese_types = ["cheddar", "gouda", "camembert"]
-  queso.find 
+  queso.find |queso|
   queso.include?("cheddar")
 end
 
-def find_the_cheese(queso)
-  queso.find do |cheese| 
-    # return the first element that is labeled as a type of cheese 
-    cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
-    end 
-  end
+# def find_the_cheese(queso)
+#   queso.find do |cheese| 
+#     # return the first element that is labeled as a type of cheese 
+#     cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
+#     end 
+#   end
