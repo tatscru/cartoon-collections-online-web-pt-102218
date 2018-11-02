@@ -5,6 +5,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect {|i| i.capitalize + "!"} 
+  # run the method and build a new array based on output. capitalize each letter and add !
 end
 
 def long_planeteer_calls(calls) 
