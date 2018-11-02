@@ -23,7 +23,8 @@ def find_the_cheese(queso)
 end
 
 def find_the_cheese(queso)
-  array.find do |cheese| 
+  queso.find do |cheese| 
+    # return the first element that is labeled as a type of cheese 
     cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
     end 
   end
