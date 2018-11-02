@@ -9,7 +9,9 @@ end
 
 def long_planeteer_calls(calls) 
   calls.any? do |word|
+    # if any of the calls/names turns out to be true based on
     word.length > 4
+    # the word being longer than 4 letters it is true
   end
 end 
 
