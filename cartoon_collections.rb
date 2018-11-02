@@ -16,16 +16,24 @@ def long_planeteer_calls(calls)
   end
 end 
 
-def find_the_cheese(queso)
-  # the array below is here to help
-  # cheese_types = ["cheddar", "gouda", "camembert"]
-    queso.find |type|
-    cheese_types.include?(type)
-  end
-end 
+# def find_the_cheese(queso)
+#   # the array below is here to help
+#   # cheese_types = ["cheddar", "gouda", "camembert"]
+#     queso.find |type|
+#     cheese_types.include?(type)
+#   end
+# end 
 # def find_the_cheese(queso)
 #   queso.find do |cheese| 
 #     # return the first element that is labeled as a type of cheese 
 #     cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
 #     end 
 #   end
+
+
+def find_the_cheese(array)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+    array.find do |type|
+    cheese_types.include?(type)
+  end 
+end
