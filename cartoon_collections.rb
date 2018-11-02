@@ -22,3 +22,8 @@ def find_the_cheese(queso)
   queso.include?("cheddar")
 end
 
+def find_the_cheese(queso)
+  array.find do |cheese| 
+    cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
+    end 
+  end
